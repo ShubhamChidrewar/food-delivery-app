@@ -1,13 +1,16 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 const Parent = React.createElement(
   "div",
-  { class: "container" },
+  { className: "container" },
   [
     React.createElement("h1", { id: "title" }, "Heading"),
-    React.createElement("p", { class: "desc" }, "This is description"),
+    React.createElement("p", { className: "desc" }, "This is description"),
   ],
-  React.createElement("div", { class: "container" }, [
+  React.createElement("div", { className: "container" }, [
     React.createElement("h1", { id: "title" }, "Heading"),
-    React.createElement("p", { class: "desc" }, "This is description"),
+    React.createElement("p", { className: "desc" }, "This is description"),
   ])
 );
 const root = ReactDOM.createRoot(document.getElementById("root"));
