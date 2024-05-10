@@ -1,14 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { LOGO_URL } from "../utils/constants";
 
 const Header = () => {
   return (
     <div className="header-wrapper">
       <div className="logo">
-        <img
-          src="https://png.pngtree.com/png-vector/20221231/ourmid/pngtree-food-delivery-logo-template-design-sign-menu-vector-png-image_43664212.jpg"
-          className=""
-        ></img>
+        <img src={LOGO_URL}></img>
       </div>
       <div className="nav-links">
         <ul>
