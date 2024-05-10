@@ -1,31 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Header from "./component/Header";
+import Body from "./component/Body";
+import "@fontsource/roboto"; // Defaults to weight 400
+import "@fontsource/roboto/400.css"; // Specify weight
+import "@fontsource/roboto/400-italic.css"; // Specify weight and style
 
-// React Element
-const Heading = () => <h1>This is JSX Heading</h1>;
-
-// React Functional Component
-
-function HeadingComp() {
-  return <h3>This is nomal function component</h3>;
-}
-
-// Component Composition --> One compoent in another one
-const HeadingComponent = () => {
+const AppLayout = () => {
   return (
-    <div>
-      <Heading />
-      <HeadingComp />
-      {2 + 2}
-      <h1>This is Heading from Functional Component</h1>
+    <div className="app">
+      <Header />
+      <Body />
     </div>
   );
 };
 
-function HeadingComp() {
-  return <h3>This is nomal function component</h3>;
-}
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<HeadingComponent />);
+root.render(<AppLayout />);

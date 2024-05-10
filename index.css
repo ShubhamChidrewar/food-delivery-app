@@ -1,3 +1,68 @@
-#title {
-  color: blue;
+* {
+  font-family: "Roboto";
+}
+.header-wrapper {
+  justify-content: space-between;
+  display: flex;
+  border: 3px solid #f7f7f7;
+}
+.search-wrapper {
+  text-align: center;
+  margin: 30px 0px;
+}
+.logo img {
+  height: 125px;
+}
+.nav-links ul li {
+  display: inline-flex;
+  margin: 35px 25px;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+.search-wrapper input {
+  height: 40px;
+  width: 300px;
+  border-radius: 50px;
+  outline: none;
+  border: 1px solid #958a8a;
+  padding: 0px 20px;
+}
+button.search-restaurant {
+  height: 40px;
+  width: 80px;
+  margin: 0px 20px;
+  border: 0px;
+  border-radius: 25px;
+  color: #fff;
+  background: #2ca6e1;
+  cursor: pointer;
+}
+.card-wrapper {
+  width: 250px;
+  border: 1px solid #000000;
+  padding: 5px;
+  border-radius: 3px;
+}
+.card-wrapper img {
+  width: 250px;
+  height: 250px;
+}
+.card-wrapper .res-name {
+  margin: 5px 0px;
+}
+.restaurants-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.restaurants-wrapper .card-wrapper {
+  margin: 10px 20px;
+}
+.card-wrapper h3,
+.card-wrapper h4 {
+  margin: 5px 0px;
+  font-weight: lighter;
 }
