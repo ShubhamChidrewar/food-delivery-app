@@ -40,6 +40,17 @@ button.search-restaurant {
   background: #2ca6e1;
   cursor: pointer;
 }
+button.top-restaurant {
+  height: 40px;
+  width: 200px;
+  margin: 0 100px 0px 20px;
+  border: 0px;
+  border-radius: 25px;
+  color: #fff;
+  background: #2ca6e1;
+  cursor: pointer;
+  float: right;
+}
 .card-wrapper {
   width: 250px;
   border: 1px solid #000000;
@@ -65,4 +76,16 @@ button.search-restaurant {
 .card-wrapper h4 {
   margin: 5px 0px;
   font-weight: lighter;
+}
+.shimmer-card {
+  margin: 20px;
+  width: 250px;
+  height: 390px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
